@@ -89,8 +89,8 @@ main {
 }
 
 .newGame {
-    grid-area: newGame1/newGame2;
-    background-color: rgb(177, 177, 52);
+    grid-column-start: newGame1;
+    grid-column-end: newGame2;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -98,25 +98,35 @@ main {
 }
 
 .rollDice {
-    grid-area: rollDice1/rollDice2;
-    background-color: rgb(177, 177, 52);
+    grid-column-start: rollDice1;
+    grid-row-start: rollDice1;
+    grid-column-end: rollDice2;
+    grid-row-end: rollDice2;
     display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    margin: auto;
+    padding: 1px 30px 1px 30px;
 }
 
 .hold {
-    grid-area: hold1/hold2;
-    background-color: rgb(177, 177, 52);
+    grid-column-start: hold1;
+    grid-row-start: hold1;
+    grid-column-end: hold2;
+    grid-row-end: hold2;
     display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    margin: auto;
+    padding: 30px;
 }
 
-.cell-1 {
-    grid-area
+/*.cell-1 {
+    grid-column-start: player1;
+    grid-row-start: player1;
+    grid-column-end: newGame1;
+    grid-row-end: hold1;
+    background-color: brown;
 }
 
 
