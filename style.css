@@ -1,0 +1,124 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+body {
+    background-color: saddlebrown;
+}
+main {
+    background-color: rgb(152, 226, 236);
+    width: auto;
+    height: auto;
+    margin: 10%;
+    padding: 5%;
+    border-radius: 10px;
+   
+    }
+
+.contenu {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 4fr;
+    grid-template-rows: 150px 150px 30px 30px;
+    grid-template-areas:
+    "player1 newGame1 newGame2 player2"
+    "score1 1 2 score2"
+    "current1 rollDice1 rollDice2 current2"
+    "current1 hold1 hold2 current2";
+}
+
+.player1 {
+    grid-area: player1;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.score1 {
+    grid-area: score1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current1 {
+    grid-area: current1;
+    background-color: rgb(38, 116, 250);
+    display: flex ;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1px 30px 1px 30px;
+}
+
+.scoreNumber1, .scoreNumber2{
+    color: white;
+}
+
+
+.player2 {
+    grid-area: player2;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+          
+.score2 {
+    grid-area: score2;
+    display: flex;
+    justify-content: center;
+    align-items: center;               
+}
+
+.current2 {
+    grid-area: current2;
+    background-color: rgb(38, 116, 250);
+    display: flex ;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1px 30px 1px 30px;
+    
+}
+
+.newGame {
+    grid-area: newGame1/newGame2;
+    background-color: rgb(177, 177, 52);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.rollDice {
+    grid-area: rollDice1/rollDice2;
+    background-color: rgb(177, 177, 52);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.hold {
+    grid-area: hold1/hold2;
+    background-color: rgb(177, 177, 52);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.cell-1 {
+    grid-area
+}
+
+
+
+
