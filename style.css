@@ -112,6 +112,14 @@ main {
     align-items: center;
 }
 
+/*dé*/
+.dice {
+    grid-area: dice;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;;
+}
+
 
 
 
