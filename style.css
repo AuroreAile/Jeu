@@ -6,31 +6,28 @@
   font-family: lato;
 }
 
-body {
-    background-color: saddlebrown;
-}
 main {
     background: linear-gradient(to right, rgb(171, 219, 253) 50%, rgb(180, 224, 254) 50%);
     width: auto;
     height: auto;
-    margin: 10%;
+    margin: 7%;
     padding: 5%;
     border-radius: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 .contenu {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 4fr;
+    grid-template-columns: 4fr 3fr 4fr;
     grid-template-rows: 150px 150px 50px 50px;
     grid-template-areas:
-    "player1 newGame1 newGame2 player2"
-    "score1 1 2 score2"
-    "current1 rollDice1 rollDice2 current2"
-    "current1 hold1 hold2 current2";
-
-
+    "player1 newGame player2"
+    "score1 dice score2"
+    "current1 rollDice current2"
+    "current1 hold current2";
 }
 
+/*Joueur 1*/
 .player1 {
     grid-area: player1;
     display: flex;
@@ -57,11 +54,7 @@ main {
     padding: 1px 30px 1px 30px;
 }
 
-.scoreNumber1, .scoreNumber2{
-    color: white;
-}
-
-
+/*Joueur2*/
 .player2 {
     grid-area: player2;
     display: flex;
@@ -89,38 +82,36 @@ main {
     
 }
 
+.scoreNumber1, .scoreNumber2{
+    color: white;
+}
+
+/*Boutons*/
 .newGame {
-    grid-column-start: newGame1;
-    grid-column-end: newGame2;
+    grid-area: newGame;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    padding-bottom: 50%;
+   
 }
 
 .rollDice {
-    grid-column-start: rollDice1;
-    grid-row-start: rollDice1;
-    grid-column-end: rollDice2;
-    grid-row-end: rollDice2;
+    grid-area: rollDice;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 1px 30px 1px 30px;
+    padding-bottom: 10%;
 }
 
 .hold {
-    grid-column-start: hold1;
-    grid-row-start: hold1;
-    grid-column-end: hold2;
-    grid-row-end: hold2;
+    grid-area: hold;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 30px;
 }
+
 
 
 
