@@ -36,6 +36,13 @@ main {
     padding-bottom: 10px;
 }
 
+.blueCircle {
+    display: flex;
+    border-radius : 20px;
+    align-self: end;
+    margin: 10px 20px 35px 20px;
+}
+
 .score1 {
     grid-area: score1;
     display: flex;
@@ -120,6 +127,9 @@ main {
     align-items: self-start;;
 }
 
+#dice {
+     border-radius:20%;
+}
 
 
 
