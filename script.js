@@ -30,7 +30,6 @@ rollDices.addEventListener('click', () => {
         }
     }
 
-    if 
     player1()
 
     function player2 () {
