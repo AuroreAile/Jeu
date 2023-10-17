@@ -12,7 +12,7 @@ const newGame = document.getElementById('newGame')
 const cercle1 = document.getElementById('cercle1')
 const cercle2 = document.getElementById('cercle2')
 const gradient = document.getElementById('gradient')
-const randomDice = Math.floor(Math.random() * 6) + 1
+let randomDice = Math.floor(Math.random() * 6) + 1
 let activePlayer = true
 
 //bouton "Lancer les dés"
@@ -21,8 +21,8 @@ rollDices.addEventListener('click', () => {
     dice.style.display = 'block'
 
     //suite chiffre aléatoire entre 1 et 6 : affichage de l'image correspondante
-    let randomDices = Math.floor(Math.random() * 6) + 1
-    dice.src = "images/dice" + randomDices + ".png"
+    let randomDice = Math.floor(Math.random() * 6) + 1
+    dice.src = "images/dice" + randomDice + ".png"
                                                                      
     //si joueur 1 actif appel de la fonction joueur 1 sinon appel de la fonction joueur 2                                                  
     if (activePlayer) {
