@@ -49,9 +49,9 @@ hold.addEventListener('click', () => {
 
     //si joueur 1 actif appel de la fonction joueur 1 sinon appel de la fonction joueur 2
         if (activePlayer) {
-            player2()
-        } else {
             player1()
+        } else {
+            player2()
         }                        
     })
 
