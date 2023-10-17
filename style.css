@@ -124,11 +124,12 @@ main {
     grid-area: dice;
     display: flex;
     justify-content: center;
-    align-items: self-start;;
+    align-items: self-start;
 }
 
 #dice {
      border-radius:20%;
+     display: none;
 }
 
 
