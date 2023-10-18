@@ -12,6 +12,8 @@ const newGame = document.getElementById('newGame')
 const cercle1 = document.getElementById('cercle1')
 const cercle2 = document.getElementById('cercle2')
 const gradient = document.getElementById('gradient')
+let challenger1 = document.getElementById('player1')
+let challenger2 = document.getElementById('player2')
 let activePlayer = true
 let randomDice
 
@@ -52,7 +54,20 @@ hold.addEventListener('click', () => {
             player1()
         } else {
             player2()
-        }                        
+        }   
+    // si score joueur 1 ou joueur 2 supérieur ou égal à 100, afficher "GAGNANT"
+        if (score1 >= 100) {
+            challenger1.innerHTML = "GAGNANT !"
+            challenger1.style.color = 'rgb(38, 116, 250)'
+        } else if (score2 >= 100) {
+            challenger2.innerHTML = "GAGNANT !"
+            challenger2.style.color = 'rgb(38, 116, 250)'
+        } else {
+            challenger1.innerHTML = "JOUEUR 1"
+            challenger1.style.color = 'black'
+            challenger2.innerHTML = "JOUEUR 2"
+            challenger2.style.color = 'black'    
+       }                  
     })
 
 
