@@ -74,7 +74,7 @@ hold.addEventListener('click', () => {
 // Remise à 0 des paramètres au clic sur "Nouvelle partie"
 newGame.addEventListener('click', () => {
     //cercle de couleur qui indique le joueur en cours
-    cercle1.style.display = 'block'
+    cercle1.style.display = 'red'
     cercle2.style.display = 'none'
     
     //joueur 1
@@ -96,32 +96,7 @@ newGame.addEventListener('click', () => {
     //dé
     document.getElementById('dice').style.display = 'none' 
 })
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-
-
-
-
+                                                                    
 //fonction pour le joueur 1
 function player1() {
     //apparaître et disparaître les cercles de couleur qui indique le joueur en cours
