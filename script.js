@@ -53,7 +53,6 @@ hold.addEventListener('click', () => {
     //changer de joueur actif
     activePlayer = !activePlayer
     
-
     // si score joueur 1 ou joueur 2 supérieur ou égal à 100, afficher "GAGNANT"
     if (score1 >= 100) {
         challenger1.innerHTML = "GAGNANT !"
@@ -74,6 +73,7 @@ hold.addEventListener('click', () => {
 
 // Remise à 0 des paramètres au clic sur "Nouvelle partie"
 newGame.addEventListener('click', () => {
+    //cercle de couleur qui indique le joueur en cours
     cercle1.style.display = 'block'
     cercle2.style.display = 'none'
     
@@ -96,6 +96,28 @@ newGame.addEventListener('click', () => {
     //dé
     document.getElementById('dice').style.display = 'none' 
 })
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
 
 
 
